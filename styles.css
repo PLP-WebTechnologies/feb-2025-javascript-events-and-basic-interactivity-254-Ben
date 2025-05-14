@@ -48,3 +48,14 @@ body {
   input.invalid {
     border-color: red;
   }
+  #movingBox {
+    width: 100px;
+    height: 100px;
+    background-color: #8e44ad;
+    animation: slide 5s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(300px); }
+  }

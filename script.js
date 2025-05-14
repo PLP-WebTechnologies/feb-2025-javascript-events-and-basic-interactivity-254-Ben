@@ -28,6 +28,18 @@
  colorBtn.addEventListener('click', () => {
    colorBtn.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
  });
+ // pause and resume animation
+ const box = document.getElementById("movingBox");
+const pauseButton = document.getElementById("pause");
+const resumeButton = document.getElementById("resume");
+
+pauseButton.addEventListener("click", () => {
+  box.style.animationPlayState = "paused";
+});
+
+resumeButton.addEventListener("click", () => {
+  box.style.animationPlayState = "running";
+});
 // Image Gallery
 const imgs = document.querySelectorAll('.gallery img');
 let current = 1;
