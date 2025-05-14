@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Bundle of Joy</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Interactive Bundle of Joy</h1>
+
+  <h2>1. Event Handling</h2>
+  <button id="actionBtn">Click me!</button>
+  <p id="output"></p>
+  <p class="secret" id="secretMsg">You found the hidden action!</p>
+
+  <h2>2. Interactive Elements</h2>
+  <button id="colorBtn">Explore My Color</button>
+
+  <div class="gallery">
+    <img src="https://images.pexels.com/photos/2220401/pexels-photo-2220401.jpeg" width="300px" height="200px" class="active" />
+    <img src="https://www.pexels.com/photo/purple-petaled-flower-2526097" width="300" height="200" />
+    <img src="paris.jpg" alt="paris" width="150" />
+    <button id="nextImg">Next Image</button>
+  </div>
+  <div class="tabs">
+    <button onclick="showTab('tab1')">Tab 1</button>
+    <button onclick="showTab('tab2')">Tab 2</button>
+    <div id="tab1" class="tab-content active">
+      <p>This is content for Tab 1.</p>
+    </div>
+    <div id="tab2" class="tab-content">
+      <p>This is content for Tab 2.</p>
+    </div>
+  </div>
+  <h2>3. Form Validation</h2>
+  <form id="myForm">
+    <label>Email: <input type="email" id="email" placeholder="your email" required /></label>
+    <div class="feedback" id="emailFeedback"></div>
+    <br />
+    <label>Password: <input type="password" id="password" placeholder="strong password" required /></label>
+    <div class="feedback" id="passwordFeedback"></div>
+    <br />
+    <button type="submit">Submit</button>
+  </form>
+    <script src="script.js"></script>
+</body>
+</html>
